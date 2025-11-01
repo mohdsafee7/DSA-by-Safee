@@ -6,14 +6,14 @@ int main(){
     cout<<"Enter the size of array:"<<endl;
     cin>>n;
 
-    int arr[n];
+    int arr[5];
     cout<<"Enter array elements of size "<<n<<": ";
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
 
     //precomputing
-    int hash[n+1] = {0};
+    int hash[5+1] = {0};
     for(int i=0; i <=n; i++){
         hash[arr[i]] += 1;
     }
